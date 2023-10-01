@@ -1,0 +1,17 @@
+.project-card {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.project-card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0;
+}
+
+.link-description {
+    padding: .5rem;
+}

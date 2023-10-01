@@ -5,9 +5,17 @@ import { Footer } from './components/footer'
 import { BsGithub } from 'react-icons/bs'
 import { FaReact, FaCss3Alt, FaHtml5, FaBootstrap, FaGit } from 'react-icons/fa'
 import { SiRubyonrails, SiJavascript, SiAxios, SiRedux, SiPostgresql } from 'react-icons/si'
+import { ProjectCardList } from './components/ProjectCardList'
+
+
 
 function App() {
+  const projects = [
+    {name: "Bariloche Vip", description: "some description would be displayed here.", img_url: 'project-bv.png', url: 'https://barilochevip.com/' }, 
+    {name: "Bicimundo", description: "some description would be displayed here.", img_url: 'project-bm.png', url: 'https://bicimundostore.up.railway.app/'  }
+  ]
   const icons = [ <FaGit />, <BsGithub />, <FaReact />, <SiRubyonrails />, <SiJavascript />, <FaCss3Alt />, <FaHtml5 />, <SiAxios />, <SiRedux />, <SiPostgresql />, <FaBootstrap /> ]
+
   return (
     <div className='page-container'>
       <Header />
@@ -29,7 +37,7 @@ function App() {
         </section>
         <section id='projects'>
           <h3>My Projects.</h3>
-          <p>List of projects</p>
+          <ProjectCardList projects={projects} />
         </section>
         <section id='skills'>
           <h3>My Skills</h3>
