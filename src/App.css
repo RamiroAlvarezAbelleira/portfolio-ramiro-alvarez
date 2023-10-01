@@ -1,4 +1,96 @@
 #root {
-  max-width: 1280px;
+  /* max-width: 1280px; */
   box-sizing: border-box;
+  color: white;
+}
+
+.page-container {
+  background-image: url('./assets/portfolio-background-mobile.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-attachment: fixed;
+}
+
+.main-container {
+  width: 100vw;
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 0;
+}
+
+.main-container section {
+  min-height: 300px;
+  padding: .5rem 1rem;
+}
+
+#main {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#about-me {
+  background-color: rgb(24, 24, 24);
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  clip-path: polygon(0% 5%, 100% 0%, 100% 95%, 0% 100%);
+}
+
+#about-me div {
+}
+
+#projects {
+
+}
+
+#skills {
+  background-color: rgb(24, 24, 24);
+  clip-path: polygon(0% 5%, 100% 0%, 100% 95%, 0% 100%);
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: flex-start;
+}
+
+#skills h3 {
+  margin-bottom: 1.5rem;
+}
+
+#skills .row {
+  justify-content: center;
+}
+
+#skills .row svg {
+  height: 30px;
+  width: 30px;
+  color: aqua;
+}
+
+.image {
+  height: 50px;
+  width: 50px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tool {
+  min-width: max-content;
+  max-width: min-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+#contact {
+
 }

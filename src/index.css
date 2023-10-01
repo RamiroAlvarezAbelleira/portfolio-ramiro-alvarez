@@ -14,6 +14,14 @@
   -webkit-text-size-adjust: 100%;
 }
 
+.primary-text-color {
+  color: aqua;
+}
+
+.secondary-text-color {
+  color: #ffffff;
+}
+
 
 @media (prefers-color-scheme: light) {
   :root {
