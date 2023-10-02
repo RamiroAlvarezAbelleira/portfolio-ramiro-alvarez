@@ -29,10 +29,7 @@ function App() {
           <div>
             <h3>About me.</h3>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto aut rerum doloribus. Commodi, provident. 
-              Sunt magnam natus asperiores temporibus cum quaerat sapiente praesentium in. 
-              Doloribus ipsa omnis consectetur deleniti! Reprehenderit sint consectetur nulla. 
-              Architecto quasi totam quisquam tempore laudantium distinctio accusamus necessitatibus deserunt animi eveniet aliquam, 
-              quia ex beatae expedita?</p>
+              Sunt magnam natus asperiores temporibus cum quaerat sapiente praesentium in.</p>
           </div>
         </section>
         <section id='projects'>

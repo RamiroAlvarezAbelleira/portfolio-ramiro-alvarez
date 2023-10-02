@@ -15,7 +15,7 @@ const ProjectCardList = ({projects}) => {
                             <Card.Text>
                                 {project.description}
                             </Card.Text>
-                            <Button variant="primary" href={`${project.url}`} target='_blanck'>View site</Button>
+                            <Button className='button my-1' href={`${project.url}`} target='_blanck'>View site</Button>
                           </div>
                         </Card.Body>
                     </Card>
