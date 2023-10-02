@@ -22,6 +22,22 @@
   color: #ffffff;
 }
 
+.button {
+  background-color: transparent;
+  border: 2px solid aqua;
+  border-radius: .5rem;
+  color: aqua;
+  min-width: 120px;
+  --bs-btn-hover-bg: aqua;
+  --bs-btn-hover-border-color: aqua;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: rgba(0, 255, 255, .8);
+  --bs-btn-active-border-color: aqua;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: aqua;
+}
 
 @media (prefers-color-scheme: light) {
   :root {

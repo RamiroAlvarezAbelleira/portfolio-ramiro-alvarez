@@ -1,4 +1,4 @@
-import { Col, Container, Row } from 'react-bootstrap'
+import { Button, Col, Container, Form, Row } from 'react-bootstrap'
 import './App.css'
 import { Header } from './components/Header/'
 import { Footer } from './components/footer'
@@ -18,27 +18,29 @@ function App() {
 
   return (
     <div className='page-container'>
-      <Header />
       <Container className='main-container'>
+        <Header />
         <section id="main">
           <h1>Ramiro Alvarez Abelleira.</h1>
           <h3>Full Stack Web Developer.</h3>
         </section>
-        
+        {/* About */}
         <section id='about-me'>
           <div>
-            <h3>About me.</h3>
+            <h3 className='section-title'>About me.</h3>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto aut rerum doloribus. Commodi, provident. 
               Sunt magnam natus asperiores temporibus cum quaerat sapiente praesentium in.</p>
           </div>
         </section>
+        {/* Projects */}
         <section id='projects'>
-          <h3>My Projects.</h3>
+          <h3 className='section-title'>My Projects.</h3>
           <ProjectCardList projects={projects} />
         </section>
+        {/* Skills */}
         <section id='skills'>
-          <h3>My Skills</h3>
-          <Row >
+          <h3 className='section-title'>My Skills.</h3>
+          <Row>
             {
               ['Git', 'GitHub', 'React', 'Ruby on Rails', 'JavaScript', 'Css', 'Html', 'Axios', 'Redux', 'PostgreSQL', 'Bootstrap'].map((tool, i) => {
                 return <Col className='tool'>
@@ -49,12 +51,25 @@ function App() {
             }
           </Row>
         </section>
+        {/* Contact */}
         <section id='contact'>
-          <h3>contact me</h3>
-          <p>Form</p>
+          <h3 className='section-title'>Contact me.</h3>
+          <Form>
+            <Form.Group className="mb-3" controlId="subject">
+              <Form.Label>Subject</Form.Label>
+              <Form.Control type="text" />
+            </Form.Group>
+            <Form.Group className="mb-3" controlId="content">
+              <Form.Label>Message</Form.Label>
+              <Form.Control as="textarea" rows={3} />
+            </Form.Group>
+            <Form.Group>
+              <Button className='button'>Submit</Button>
+            </Form.Group>
+          </Form>
         </section>
+        <Footer />
       </Container>
-      <Footer />
     </div>
   )
 }

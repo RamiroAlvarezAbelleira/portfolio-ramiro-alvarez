@@ -24,6 +24,11 @@
   padding: .5rem 1rem;
 }
 
+.section-title {
+  width: fit-content;
+  color: aqua;
+}
+
 #main {
   height: 200px;
   display: flex;
@@ -34,7 +39,6 @@
 
 #about-me {
   background-color: rgb(24, 24, 24);
-  height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,11 +46,12 @@
   clip-path: polygon(0% 5%, 100% 0%, 100% 95%, 0% 100%);
 }
 
-#about-me div {
+#about-me p {
+  opacity: .6;
 }
 
 #projects {
-
+  margin: 2rem 0;
 }
 
 #skills {
@@ -91,16 +96,6 @@
   margin-top: 1rem;
 }
 
-.button {
-  background-color: transparent;
-  border: 2px solid aqua;
-  border-radius: .5rem;
-  color: aqua;
-  min-width: 120px;
-  --bs-btn-hover-bg: aqua;
-  --bs-btn-hover-border-color: aqua;
-}
-
 #contact {
-
+  margin: 2rem 0;
 }
