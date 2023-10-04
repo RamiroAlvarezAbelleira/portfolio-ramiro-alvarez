@@ -1,3 +1,17 @@
 .header {
     color: white;
 }
+
+.mobile-background {
+    background-color: rgb(41, 41, 41);
+}
+
+#offcanvasNavbar-expand > div.mobile-background.offcanvas-header > button {
+    text-shadow:0 0 5px aqua;
+}
+
+@media (min-width: 991px) {
+    .mobile-background {
+        background-color: transparent;
+    }
+}

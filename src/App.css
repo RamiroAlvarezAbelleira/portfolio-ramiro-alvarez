@@ -24,9 +24,30 @@
   padding: .5rem 1rem;
 }
 
+.skewed-name {
+  text-shadow: 0 0 3px aqua;
+  font-size: 3rem;
+  color: aqua;
+}
+
+.skewed-dev {
+  background-color: aqua;
+  clip-path: polygon(0% 0%, 91% 13%, 100% 100%, 8% 88%);
+  padding: 0 .9rem .2rem .9rem;
+  text-shadow: 0 0 12px black;
+}
+
 .section-title {
   width: fit-content;
-  color: aqua;
+  background-color: aqua;
+  clip-path: polygon(0% 0%, 95% 7%, 100% 100%, 5% 93%);
+  padding: .3rem 1rem;
+  text-shadow: 0 0 12px black;
+}
+
+#about-me div, #projects div, #skills div, #contact div {
+  width: 100%;
+  max-width: 395px;
 }
 
 #main {
@@ -34,7 +55,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
+}
+
+#main h1 {
+  margin-bottom: 1rem;
 }
 
 #about-me {
@@ -52,6 +77,8 @@
 
 #projects {
   margin: 2rem 0;
+  display: flex;
+  justify-content: center;
 }
 
 #skills {
@@ -61,7 +88,7 @@
   display: flex;
   flex-direction: column;
   justify-content:center;
-  align-items: flex-start;
+  align-items: center;
 }
 
 #skills h3 {
@@ -98,4 +125,27 @@
 
 #contact {
   margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 767px) {
+  #about-me div, #projects div, #skills div, #contact div {
+    max-width: 700px;
+  }
+
+  #skills .row {
+    max-width: 395px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 991px) {
+  .page-container {
+      background-image: url('./assets/portfolio-background-desktop.jpg');
+  }
+  /* .main-container {
+    background-color: ;
+  } */
 }

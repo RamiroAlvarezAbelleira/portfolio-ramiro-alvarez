@@ -34,3 +34,20 @@ p.card-text {
     justify-content: space-between;
     align-items: flex-start;
 }
+
+@media (min-width: 767px) {
+    .project-card .card-body {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    img.card-img-top {
+        max-width: 300px;
+        border-bottom: none;
+        border-right: 2px solid aqua;
+    }
+
+    .link-description {
+        padding: .5rem 2rem;
+    }
+}

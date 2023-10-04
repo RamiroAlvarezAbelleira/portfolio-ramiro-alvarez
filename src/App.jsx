@@ -18,11 +18,11 @@ function App() {
 
   return (
     <div className='page-container'>
-      <Container className='main-container'>
+      <main className='main-container'>
         <Header />
         <section id="main">
-          <h1>Ramiro Alvarez Abelleira.</h1>
-          <h3>Full Stack Web Developer.</h3>
+          <h1>Ramiro Alvarez Abelleira<span className='skewed-name'>.</span></h1>
+          <h3>Full Stack <span className='skewed-dev'>Web Developer.</span></h3>
         </section>
         {/* About */}
         <section id='about-me'>
@@ -34,11 +34,14 @@ function App() {
         </section>
         {/* Projects */}
         <section id='projects'>
+          <div>
           <h3 className='section-title'>My Projects.</h3>
           <ProjectCardList projects={projects} />
+          </div>
         </section>
         {/* Skills */}
         <section id='skills'>
+          <div>
           <h3 className='section-title'>My Skills.</h3>
           <Row>
             {
@@ -50,26 +53,29 @@ function App() {
               }) 
             }
           </Row>
+          </div>
         </section>
         {/* Contact */}
         <section id='contact'>
-          <h3 className='section-title'>Contact me.</h3>
-          <Form>
-            <Form.Group className="mb-3" controlId="subject">
-              <Form.Label>Subject</Form.Label>
-              <Form.Control type="text" />
-            </Form.Group>
-            <Form.Group className="mb-3" controlId="content">
-              <Form.Label>Message</Form.Label>
-              <Form.Control as="textarea" rows={3} />
-            </Form.Group>
-            <Form.Group>
-              <Button className='button'>Submit</Button>
-            </Form.Group>
-          </Form>
+          <div>
+            <h3 className='section-title'>Contact me.</h3>
+            <Form className='my-4'>
+              <Form.Group className="mb-3" controlId="subject">
+                <Form.Label>Subject</Form.Label>
+                <Form.Control type="text" />
+              </Form.Group>
+              <Form.Group className="mb-3" controlId="content">
+                <Form.Label>Message</Form.Label>
+                <Form.Control as="textarea" rows={3} />
+              </Form.Group>
+              <Form.Group>
+                <Button className='button'>Submit</Button>
+              </Form.Group>
+            </Form>
+          </div>
         </section>
         <Footer />
-      </Container>
+      </main>
     </div>
   )
 }
